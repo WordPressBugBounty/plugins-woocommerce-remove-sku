@@ -1,14 +1,14 @@
 <?php
 /**
- * Plugin Name: Remove SKU From Product detail page
+ * Plugin Name: Remove SKU From Single Product page
  * Description: This simple plugin will remove wooCommerce SKUs completely from product description page.
  * Author: Prem Tiwari
  * Plugin URI: https://www.premtiwari.in/woocommerce-remove-sku/
  * Author URI: https://www.premtiwari.in
- * Version: 1.4.2
+ * Version: 1.4.3
  * License: GPL2+
  * Requires at least: 3.8
- * Tested up to: 6.0
+ * Tested up to: 7.0
  * @category WooCommerce
  * @requires WooCommerce version 3.2.6
  */
@@ -81,7 +81,7 @@ class WC_Settings_sku {
 					'1' => __( 'Yes', 'woocommerce' ),
 				),
 				'desc'    => __( 'Hide product sku from products description page.', 'woocommerce-sku-settings-tab' ),
-				'id'      => 'wc_settings_tab_sku'
+				'id'      => 'wc_settings_tab_sku_hide'
 			),
 
 			'section_end' => array(
@@ -101,12 +101,11 @@ WC_Settings_sku::init();
 function wpdocs_enqueue_custom_admin_style() {
 	wp_enqueue_style( 'wrs_stylesheet', plugin_dir_url( __FILE__ ) . 'css/wrs-style.css', false, '1.0.0' );
 }
-add_action( 'wp_enqueue_scripts', 'wpdocs_enqueue_custom_admin_style' );
 
 /**
- * Hide the sku from product description page.
+ * Hide the sku from product description page if the setting is active.
  */
-if ( get_option( 'wc_settings_tab_sku' ) == 1 ) {
+if ( get_option( 'wc_settings_tab_sku_hide' ) == 1 ) {
 	add_filter( 'wc_product_sku_enabled', '__return_false' );
 	add_action( 'wp_enqueue_scripts', 'wpdocs_enqueue_custom_admin_style' );
 }

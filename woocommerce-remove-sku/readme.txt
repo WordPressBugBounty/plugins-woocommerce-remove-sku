@@ -1,20 +1,18 @@
-=== Remove SKU From Product detail page ===
+=== Remove SKU From Single Product page ===
 Contributors: freewebmentor
 Tags: remove sku,sku,product sku,product
 Requires at least: 3.8
-Tested up to: 6.4
+Tested up to: 7.0
 Stable tag: trunk
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-This plugin will remove SKU completely from the product details page.
+This plugin will remove SKU completely from the single product page.
 
 == Description ==
 [Homepage](https://www.premtiwari.in/) | [Documentation](https://www.premtiwari.in/woocommerce-remove-sku/) | [Support](https://wordpress.org/support/plugin/woocommerce-remove-sku/reviews/#new-post)
 
-Is there a way for me to hide SKUs in WooCocommerce from the single product template without overriding it? I’m currently overriding the single product meta template and deleting the SKU from being adding, but I’d rather do this via a code snippet so I’m not overriding that template if it can be done.
-
-If you don’t need to use SKUs at all in your shop, you can disable them completely by using this plugin.
+If you don’t need to use SKUs at all in your shop, you can disable them completely by using this plugin. 
 
 This plugin should work with any WooCommerce installation, since it hooks up to the core functionality of WooCommerce. Note that at least version 2.1.0 of WooCommerce is required.
 
@@ -44,3 +42,6 @@ First release
 = 1.2 =
 * Compatible
 * Support multisite
+
+= 1.4.3 =
+* Compatible with WordPress 7.0
