@@ -5,10 +5,12 @@
  * Author: Prem Tiwari
  * Plugin URI: https://www.premtiwari.in/woocommerce-remove-sku/
  * Author URI: https://www.premtiwari.in
- * Version: 1.4.3
- * License: GPL2+
- * Requires at least: 3.8
- * Tested up to: 7.0
+ * Version: 1.4.4
+ * Requires at least: 7
+ * Requires PHP: 7.4
+ * Tested up to: 7.1
+ * License: GPLv3
+ *
  * @category WooCommerce
  * @requires WooCommerce version 3.2.6
  */

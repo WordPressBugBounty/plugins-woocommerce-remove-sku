@@ -1,8 +1,9 @@
 === Remove SKU From Single Product page ===
 Contributors: freewebmentor
 Tags: remove sku,sku,product sku,product
-Requires at least: 3.8
-Tested up to: 7.0
+Requires at least: 7
+Requires PHP: 7.4
+Tested up to: 7.1
 Stable tag: trunk
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
